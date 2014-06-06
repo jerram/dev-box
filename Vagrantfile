@@ -13,8 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "private_network", ip: "10.2.2.3"
   config.vm.provision :shell, :inline => "echo \"Etc/UTC\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
   config.vm.network :forwarded_port, guest: 80, host: 8080
-	config.vm.network :forwarded_port, guest: 443, host: 8443
-	config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 443, host: 8443
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 8000, host: 8000
 
   config.vm.provider "virtualbox" do |v|
     v.gui = false
@@ -22,8 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.memory = 2048
     v.cpus = 2
   end
-	
-	#config.vm.provision "shell", path: "provision.sh"
-	#config.vm.provision "shell", path: "setup-headless-selenium-xvfb.sh"
-	#config.vm.provision "shell", path: "angular.sh"
+
+  config.vm.provision "shell", path: "provision.sh"
+  config.vm.provision "shell", path: "setup-headless-selenium-xvfb.sh"
+  #config.vm.provision "shell", path: "angular.sh"
 end

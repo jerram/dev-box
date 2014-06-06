@@ -1,0 +1,43 @@
+    1  cd /vagrant/
+    2  cd public/angular-seed/
+    3  npm run protractor
+    4  cd ../
+    5  git clone https://github.com/angular/angular-phonecat.git
+    6  cd angular-phonecat/
+    7  l
+    8  ll
+    9  npm start
+   10  history 
+   11  history >> history.txt
+    1  cd /vagrant/
+    2  sudo netstat -pant
+    3  curl 127.0.0.1:8000
+    4  l
+    5  ll
+    6  cd public/angular-seed/
+    7  ll
+    8  sudo netstat -pant
+    9  cd ../../
+   10  l public/angular-seed/package.json 
+   11  cat public/angular-seed/package.json 
+   12  git diff
+   13  git diff -w
+   14  l public/angular-seed/package.json 
+   15  http-server -p 8000
+   16  node http-server -p 8000
+   17  npm http-server -p 8000
+   18  npm start http-server -p 8000
+   19  node start http-server -p 8000
+   20  webdriver-manager update
+   21  webdriver-manager start
+   22  cd public/angular-phonecat/
+   23  npm run protractor
+   24  cd ../
+   25  git diif
+   26  git diff
+   27  git diff -w
+   28  cit cola
+   29  git cola
+   30  cd public/angular-phonecat/
+   31  l
+   32  history >> history.txt
