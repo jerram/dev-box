@@ -1,0 +1,102 @@
+    1  vd /vagrant/
+    2  cd /vagrant/
+    3  ll
+    4  sudo ./provision.sh 
+    5  lessc
+    6  ruby -v
+    7  rails --version
+    8  cat /etc/profile.d/rvm.sh
+    9  rvm install 2.0.0
+   10  curl -L get.rvm.io | bash -s stable --auto-dotfiles
+   11  sudo -i
+   12  rvm
+   13  source ~/.bash_profile 
+   14  rvm
+   15  rvm install 2.0.0
+   16  rvm --default use 2.0.0
+   17  gem install rails -v 4.0.0 --no-document
+   18  rvm install 2.1.1
+   19  rvm install 2.1.2 && rvm --default use 2.1.2
+   20  rvm --default use 2.0.0
+   21  gem update --system
+   22  gem install compass --no-document
+   23  sudo npm install -g protractor
+   24  git clone git clone https://github.com/angular/angular-seed.git /vagrant/public/angular-seed
+   25  git clone https://github.com/angular/angular-seed.git /vagrant/public/angular-seed
+   26  cd /vagrant/public/angular-seed
+   27  npm install
+   28  sudo npm install
+   29  npm run test-single-run
+   30  npm run update-webdriver
+   31  echo $DISPLAY
+   32  sudo apt-get -y install libxpm4 libxrender1 libgtk2.0-0 libnss3 libgconf-2-4
+   33  sudo apt-get -y install chromium-browser
+   34  cd ../../
+   35  sudo ./setup-headless-selenium-xvfb.sh 
+   36  cd public/angular-seed/
+   37  npm install
+   38  npm run test-single-run
+   39  npm run protractor
+   40  chromium-browser
+   41  sudo /etc/init.d/xvfb start
+   42  export DISPLAY=:10s
+   43  chromium-browser
+   44  export DISPLAY=:10
+   45  chromium-browser
+   46  sudo /etc/init.d/xvfb stop
+   47  sudo netstat -pant
+   48  ps -rf 
+   49  ps -ef  
+   50  sudo /etc/init.d/xvfb start
+   51  ps -ef  
+   52  chromium-browser
+   53  sudo /etc/init.d/xvfb stop
+   54  Xvfb -ac :10 -screen 0 1280x1024x16 &
+   55  export DISPLAY=:10
+   56  chromium-browser
+   57  Xvfb :10 -extension RANDR -noreset -ac -screen 0 1280x1024x16 &
+   58  sudo /etc/init.d/xvfb stop
+   59  Xvfb :10 -extension RANDR -noreset -ac -screen 0 1280x1024x16 &
+   60  fg
+   61  Xvfb :10 -extension RANDR -noreset -ac -screen 0 1280x1024x16 &
+   62  chromium-browser
+   63  fg
+   64  Xvfb :10 -extension RANDR -noreset -ac -screen 10 1280x1024x16 &
+   65  chromium-browser
+   66  cd .././
+   67  cd ../
+   68  sudo -i
+   69  chromium-browser
+   70  sudo vim /etc/init.d/xvfb 
+   71  sudo /etc/init.d/xvfb restart
+   72  chromium-browser
+   73  sudo /etc/init.d/xvfb stop
+   74  sudo /etc/init.d/xvfb restart
+   75  chromium-browser
+   76  history 
+   77  sudo /etc/init.d/xvfb stop
+   78  Xvfb :10 -extension RANDR -noreset -ac -screen 0 1280x1024x16
+   79  sudo /etc/init.d/xvfb stop
+   80  ps -ef
+   81  sudo kill 16273
+   82  ps -ef
+   83  ps -ef | grep XVfb
+   84  Xvfb :10 -extension RANDR -noreset -ac -screen 0 1280x1024x16
+   85  sudo /etc/init.d/xvfb stop
+   86  sudo /etc/init.d/xvfb start
+   87  chromium-browser
+   88  sudo /etc/init.d/xvfb stop
+   89  ps -ef | grep XVfb
+   90  chromium-browser
+   91  sudo /etc/init.d/xvfb start
+   92  chromium-browser
+   93  cd public/angular-seed/
+   94  ls -lah 
+   95  history 
+   96  npm run test-single-run
+   97  protractor 
+   98  history | grep protractor
+   99  npm run protractor
+  100  protractor node_modules/protractor/example/conf.js
+  101  cd ../../
+  102  history >> history-dev-box-02.txt 

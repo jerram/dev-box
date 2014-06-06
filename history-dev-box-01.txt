@@ -1,0 +1,170 @@
+    1  cd /vagrant/
+    2  ll
+    3  sudo chmod +x provision.sh 
+    4  ll
+    5  ./provision.sh 
+    6  sudo ./provision.sh 
+    7  exit
+    8  sudo /vagrant/provision.sh 
+    9  ll
+   10  cd /vagrant/
+   11  ll
+   12  chmod +x vhost.sh 
+   13  l
+   14  ./vhost.sh 
+   15  sudo ./vhost.sh 
+   16  sudo service apache2 restart
+   17  echo "ServerName dev" | tee /etc/apache2/conf.d/fqdn.conf
+   18  l /etc/apache2/conf.d/
+   19  l /etc/apache2/conf-available/
+   20  ll /etc/apache2/conf-available/
+   21  ll /etc/apache2/
+   22  cat /etc/apache2/apache2.conf 
+   23  cat /etc/apache2/ports.conf 
+   24  echo "ServerName dev" | tee /etc/apache2/httpd.conf
+   25  sudo echo "ServerName dev" | tee /etc/apache2/httpd.conf
+   26  echo "ServerName dev" | sudo tee /etc/apache2/httpd.conf
+   27  sudo service apache2 restart
+   28  l /etc/apache2/conf-available/
+   29  ll /etc/apache2/conf-available/
+   30  echo "ServerName dev" | tee /etc/apache2/conf-available/httpd.conf
+   31  echo "ServerName dev" | sudo tee /etc/apache2/conf-available/httpd.conf
+   32  sudo a2enconf httpd
+   33  sudo service apache2 restart
+   34  apache -S
+   35  apache2 -S
+   36  sudo apache2 -S
+   37  apache2 -V
+   38  cat /etc/apache2/sites-enabled/000-default.conf 
+   39  ./vhost.sh 
+   40  sudo ./vhost.sh 
+   41  /etc/init.d/apache2 restart
+   42  cat /etc/apache2/sites-enabled/000-default.conf 
+   43  /etc/init.d/apache2 restart
+   44  echo 'hello world' > public/index.php
+   45  /etc/init.d/apache2 stop
+   46  ifconfig
+   47  netstat -pant
+   48  sudo netstat -pant
+   49  watch -n "sudo netstat -pant"
+   50  watch -n1 "sudo netstat -pant"
+   51* 
+   52  watch -n1 "sudo netstat -pant"
+   53  sudo /etc/init.d/apache2 stop
+   54  sudo /etc/init.d/apache2 start
+   55  ll public/
+   56  mv public/index.php public/index.html
+   57  sudo /etc/init.d/apache2 restart
+   58  sudo chown vagrant:www-data -R public
+   59  l
+   60  ll
+   61  l public/
+   62  ll public/
+   63  sudo chmod 777 public/index.html 
+   64  sudo vim /etc/apache2/sites-enabled/000-default.conf
+   65  ll /vagrant/public
+   66  sudo ls -lah /var/log/apache2/
+   67  sudo ls -lah /var/log/apache2/error.log
+   68  sudo cat /var/log/apache2/error.log
+   69  sudo cat /var/log/apache2/access.log
+   70  sudo cat /var/log/apache2/error.log
+   71  sudo cat /var/log/apache2/access.log
+   72  sudo tail -f /var/log/apache2/access.log
+   73  sudo /etc/init.d/apache2 stop
+   74  sudo /etc/init.d/apache2 start
+   75  ./vhost.sh 
+   76  sudo ./vhost.sh 
+   77  ./provision.sh 
+   78  sudo ./provision.sh 
+   79  debconf-set-selections
+   80  sudo debconf-set-selections
+   81  ./provision.sh 
+   82  sudo ./provision.sh 
+   83  ll
+   84  chmod +x setup-headless-selenium-xvfb.sh 
+   85  sudo ./setup-headless-selenium-xvfb.s 
+   86  sudo ./setup-headless-selenium-xvfb.sh 
+   87  sudo npm install protractor -g
+   88  sudo npm install -g less
+   89  lessc
+   90  apt-get install -y node
+   91  sudo apt-get install -y node
+   92  sudo apt-get install -y nodejs
+   93  apt-get install -y nodejs npm
+   94  sudo apt-get install -y nodejs npm
+   95  sudo npm install -g less
+   96  ./setup-headless-selenium-xvfb.sh 
+   97  sudo ./setup-headless-selenium-xvfb.sh 
+   98  sudo chown root:root /etc/init.d/xvfb
+   99  l /etc/init.d/xvfb
+  100  sudo update-rc.d  /etc/init.d/xvfb defaults
+  101  sudo update-rc.d  xvfb defaults
+  102  sudo /etc/init.d/xvfb start
+  103  sudo /etc/init.d/xvfb
+  104  /etc/init.d/xvfb
+  105  sudo vim /etc/init.d/xvfb
+  106  /etc/init.d/xvfb
+  107  sudo /etc/init.d/xvfb
+  108  sudo /etc/init.d/xvfb start
+  109  ll
+  110  chmod +x xvfb.sh 
+  111  sudo xvfb.sh 
+  112  sudo ./xvfb.sh 
+  113  sudo vim /etc/init.d/xvfb
+  114  sudo /etc/init.d/xvfb
+  115  sudo /etc/init.d/xvfb start
+  116  sudo ./setup-headless-selenium-xvfb.sh 
+  117  updatedb
+  118  sudo updatedb
+  119  locate chromedriver
+  120  chromedriver
+  121  which chromedriver
+  122  sudo apt-get install chromium-chromedriver
+  123  which chromedriver
+  124  sudo updatedb
+  125  which chromedriver
+  126  locate chromedriver
+  127  /usr/lib/chromium-browser/chromedriver
+  128  sudo webdriver-manager update --standalone
+  129  npm run update-webdriver
+  130  sudo npm run update-webdriver
+  131  sudo npm run update-webdriver -g
+  132  ll /usr/lib/node_modules/protractor/selenium/chromedriver
+  133  ll /usr/lib/
+  134  /usr/local/lib/node_modules
+  135  ls -lah /usr/local/lib/node_modules/
+  136  /usr/local/lib/node_modules/protractor/selenium/chromedriver
+  137  ll /usr/local/lib/node_modules/protractor/selenium/
+  138  ll /usr/local/lib/node_modules/protractor/
+  139  ll /usr/local/lib/node_modules/protractor/bin/
+  140  /usr/local/lib/node_modules/protractor/bin/webdriver-manager 
+  141  sudo /usr/local/lib/node_modules/protractor/bin/webdriver-manager update
+  142  sudo /usr/local/lib/node_modules/protractor/bin/webdriver-manager 
+  143  sudo npm install protractor -g
+  144  ll /usr/local/lib/node_modules/protractor/
+  145  ll /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/
+  146  cat  /usr/local/lib/node_modules/protractor/README.md 
+  147  webdriver-manager
+  148  sudo webdriver-manager
+  149  sudo webdriver-manager update
+  150  sudo webdriver-manager start
+  151  sudo npm uninstall protractor -g
+  152  sudo npm install protractor -g
+  153  sudo apt-get install chromium-browser firefox
+  154  sudo apt-get install chromium-browser
+  155  sudo npm install -g chromedriver
+  156  less /usr/share/doc/nodejs/README.Debian
+  157  sudo apt-get remove node
+  158  sudo autoremove
+  159  sudo apt-get autoremov
+  160  sudo apt-get autoremove 
+  161  sudo npm install -g chromedriver
+  162  which nodejs
+  163  sudo ln -s /usr/bin/nodejs /usr/bin/node
+  164  which node
+  165  sudo npm install -g chromedriver
+  166  sudo webdriver-manager start
+  167  sudo webdriver-manager update
+  168  sudo webdriver-manager start
+  169  pwd
+  170  history >> history-dev-box-01.txt
