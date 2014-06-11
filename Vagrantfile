@@ -28,4 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "provision.sh"
   config.vm.provision "shell", path: "setup-headless-selenium-xvfb.sh"
   #config.vm.provision "shell", path: "angular.sh"
+
+  config.vm.provision "shell", inline: "service apache2 restart", run: "always"
+
 end
